@@ -19,7 +19,34 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+}
 
+.logo-container {
+    width: 550px;
+    height: 120px;
+    margin-top: 150px;
+    background-color: rgb(59, 58, 58, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url(./img/atributos\ de\ etiqueta\ source\ \(no\ src\).png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80px; 
+    width: 120px;
+    height: 120px;
+}
+
+.p-logo {
+    font-family: "josefin sans";
+    font-weight: 300;
+    font-size: 50px;
+    margin-top: 60px;
+    color: white;
 }
 
 .content {
@@ -85,6 +112,20 @@ input:focus{
     border-radius: 5px;
 }
 
+input.error {
+    outline: none;
+    border: 1px solid rgb(245, 89, 89);
+    box-shadow: 0px 1px 3px rgba(245, 89, 89, 0.7) ;
+    border-radius: 5px; 
+}
+
+input.valid {
+    outline: none;
+    border: 1px solid rgb(94, 245, 89);
+    box-shadow: 0px 1px 3px rgba(99, 245, 89, 0.7) ;
+    border-radius: 5px; 
+}
+
 button{
     background-color: rgb(3, 78, 3, 0.8);
     padding: 8px;
@@ -114,4 +155,12 @@ p {
 a {
     text-decoration: none;
     color: rgb(3, 78, 3, 0.8);
+}
+
+.pass-msg.green-para {
+    color: rgb(48, 164, 44);
+}
+
+.pass-msg.red-para {
+   color: rgb(245, 89, 89);
 }

@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <script src="./form.js" defer></script>
     <title>Sign up form</title>
 </head>
 <body>
     <div class="side">
+        <div class="logo-container">
+            <div class="logo"></div>
+            <p class="p-logo">ODIN</p>
+        </div>    
     </div>
     <div class="content">
         <header>
@@ -34,7 +42,8 @@
                 <div class="div-form">
                     <div class="slot left">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="user_email" required>
+                        <input type="email" id="email" name="user_email" placeholder="thor.odison@gmail.com"
+                        pattern="[a-zA-Z0-9.\-_!?]+@[a-zA-Z0-9.\-_!?]+\.[a-zA-Z]{2,3}" required>
                     </div>
                     <div class="slot right">
                         <label for="tel">PHONE NUMBER</label>
@@ -45,6 +54,7 @@
                     <div class="slot left">
                         <label for="password">PASSWORD</label>
                         <input type="password" id="password" name="user_password" required>
+                        <p class="pass-msg"></p>
                     </div>
                     <div class="slot rigth">
                         <label for="password2">CONFIRM PASSWORD</label>
